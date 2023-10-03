@@ -31,7 +31,7 @@ class CreateProjectEvalsTable extends Migration
             $table->integer('attendance');
             $table->timestamps();
 
-            // Define foreign key constraints
+            // Foreign key
             $table->foreign('ProjectID')->references('ProjectID')->on('projects');
             $table->foreign('MemberID')->references('memberID')->on('members');
         });
