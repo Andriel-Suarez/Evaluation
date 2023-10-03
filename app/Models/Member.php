@@ -1,11 +1,11 @@
 <?php
 
-namespace App;
+namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
 class Member extends Model
 {
-    protected $primaryKey = 'memberID'; // Set the primary key
+    protected $primaryKey = 'memberID'; 
     protected $fillable = ['memberName', 'Position', 'BU', 'Batch'];
 }
